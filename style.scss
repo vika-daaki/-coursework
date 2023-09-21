@@ -1,0 +1,434 @@
+@font-face {
+    font-family: "DelaGothicOne";
+    src: url(fonts/DelaGothicOne/DelaGothicOne-Regular.woff);
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Sintony&family=Tomorrow&display=swap');
+* {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.header {
+    color: black;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+        &__logo {
+            max-width: 184px;
+            z-index: 2;
+            cursor: pointer;
+        }
+    margin-bottom: 36px;
+}
+.list {
+    display: flex;
+}
+.menu {
+    &__link {
+        margin-right: 30px;
+        &_active {
+            font-weight: 700;
+            color: #DA1F39;
+        }
+    }
+}
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    &__select {
+        margin-right: 20px;
+    }
+    &__tel {
+        margin-right: 20px;
+    }
+    &__select {
+        border: none;
+        font-family: "Raleway";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    &__icon {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+            &_margin-right {
+                margin-right: 10px;
+            }
+    }
+}
+.breadcrumbs {
+    &__link {
+        font-family: "Raleway";
+        color: black;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 166.4%; 
+            &_thin {
+                font-weight: 400;
+            }
+    }
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 80px;
+    margin-bottom: 40px;
+    &__divider {
+        width: 25px;
+        height: 0.7px;
+        background-color: black;
+        }
+}
+.aside {
+    width: 297px;
+}
+.dropdown {
+    color: #000;
+    font-family: "Raleway";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166.4%; 
+    margin-bottom: 15px;
+        &__content-item {
+            color: #565656;
+            font-weight: 300;
+        }
+        &__checkbox {
+            margin-right: 5px;
+        }
+        &__title {
+            cursor: pointer;
+            margin-bottom: 5px;
+                &_thin {
+                    font-weight: 300;
+                }
+        }
+        &__title::after {
+            content:url('/images/dropdown.svg'); 
+            position: relative; 
+            left: 5px;
+            top: 0px;
+        }
+}
+.catalog-wrap {
+    &__content {
+        position: relative;
+    }
+    display: flex;
+    padding: 0 80px 0 80px;
+    margin-bottom: 130px;
+}
+main {
+    position: relative;
+}
+details > summary {
+    list-style: none;
+  }
+.sorting {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.catalog {
+    color: black;
+    font-family: "Raleway";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.4%; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.sorting {
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__content-grid {
+        max-width: 14px;
+    }
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    font-family: "Raleway";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+h1 {
+    color: #000;
+    font-family: "DelaGothicOne";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; 
+    text-transform: uppercase;
+}
+
+.catalog {
+    color: #000;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 166.188%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+.card {
+    &__img {
+        max-width: 507px;
+    }
+    &__price {
+        font-weight: 700;
+    }
+}
+.show-more {
+    color: #000;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.pages {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #000;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166.2%; 
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+.gray {
+    color: #B0B0B0;
+}
+.footer {
+    &__logo {
+        max-width: 184px;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    color: var(--black, #000);
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 166.188%; 
+    padding: 70px 196px 70px 80px;
+    background-color: #F4F4F4;
+ }
+ .footer-links {
+    &__link_active {
+        font-weight: 700;
+        color: #DA1F39;
+        margin-top: 30px;
+    }
+    &__link_underline {
+        text-decoration: underline;
+    }
+    &__wrap {
+        display: flex;
+        gap: 20px;
+    }
+    &__icons {
+        flex-direction: row;
+    }
+    &__copywrite {
+        margin-top: 60px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ .order-1 {
+    order: 1;
+ }
+ .order-2 {
+    order: 2;
+ }
+ .order-3 {
+    order: 3;
+ }
+ .order-4 {
+    order: 4;
+ }
+ .footer-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+ }
+ ul {
+    list-style: none;
+    padding: 0;
+}
+
+#toggler, .toggler-label {
+    display: none;
+}
+#filters, .filters-label {
+    display: none;
+}
+
+@media screen and (max-width: 1330px) {
+    .menu {
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .card {
+        &__img {
+            width: 100%;
+        }
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .catalog {
+        gap: 30px;
+    }
+    .footer {
+        padding: 70px 70px 70px 80px;
+    }
+ }
+
+@media screen and (max-width: 983px) {
+    .navbar {
+        &__select {
+            display: none;
+        }
+        &__tel {
+            display: none;
+        }
+    }
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        z-index: 10;
+            &__link {
+                font-family: "DelaGothicOne";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0em;
+                    &_active {
+                        color: #DA1F39;
+                    }
+            }
+    }
+    .toggler-label {
+        display: inline-flex;
+    }
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        width: 334px;
+        padding: 20px 20px 20px 10px;
+    }
+    .list {
+        flex-direction: column;  
+        gap: 30px;  
+        padding-top: 30px; 
+    }
+    .header {
+        padding-left: 40px;
+        padding-right: 40px;
+    height: auto;
+        &__links {
+            max-width: 20px;
+        }
+    }
+    .breadcrumbs {
+        padding-left: 40px;
+    }
+    .catalog-wrap {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .footer {
+        padding: 80px 40px 80px 40px;
+    }
+    .show-more {
+        float: left;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .catalog-wrap {
+        margin-bottom: 80px;
+    }
+    .order-3 {
+        order: 4;
+    }
+    .order-4 {
+        order: 3;
+    }
+ }
+ @media screen and (max-width: 700px) {
+    .breadcrumbs {
+        display: none;
+    }
+    .aside {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .filters-label {
+        display: inline-flex;
+    }
+    .catalog-wrap {
+        display: block;
+    }
+    .sorting {
+        &__content-grid {
+            display: none;
+        }
+    }
+    #filters:checked ~ .aside {
+        max-height: 100%;
+        max-width: 349px;
+        position: absolute;
+        top: 20px;
+        z-index: 1;
+        background-color: white;
+    }
+ }

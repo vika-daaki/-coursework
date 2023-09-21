@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__links">
+            <label for="toggler" class="toggler-label"><img src="images/burger.svg" alt=""></label>
+            <input type="checkbox" name="" id="toggler">
+            <nav class="menu">
+                <ul class="list">
+                    <li><a href="" class="menu__link menu__link_active">Каталог</a></li>
+                    <li><a href="" class="menu__link">Знижки</a></li>
+                    <li><a href="" class="menu__link">Блог</a></li>
+                    <li><a href="" class="menu__link">Про нас</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="images/logo.png" alt="etnodim-logo" class="header__logo">
+        <div class="navbar">
+            <select name="language" id="" class="navbar__select">
+                <option value="UA">UA</option>
+                <option value="EN">EN</option>
+            </select>
+            <select name="currency" id="" class="navbar__select">
+                <option value="₴">₴</option>
+                <option value="$">$</option>
+                <option value="€">€</option>
+            </select>
+            <a href="tel:+380978889292" class="navbar__tel">+38 097 888 92 92</a>
+            <img src="images/search.svg" alt="" class="navbar__icon navbar__icon_margin-right">
+            <img src="images/cart.svg" alt="" class="navbar__icon">
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <a href="" class="breadcrumbs__link">Головна</a>
+        <div class="breadcrumbs__divider"></div>
+        <a href="" class="breadcrumbs__link">Жінкам</a>
+        <div class="breadcrumbs__divider"></div>
+        <a href="" class="breadcrumbs__link breadcrumbs__link_thin">Жіночі вишиванки</a>
+    </div>
+    <main class="catalog-wrap">
+        <label for="filters" class="filters-label">Фільтри</label>
+        <input type="checkbox" name="" id="filters">
+        <aside class="aside">
+            <details class="dropdown" open>
+                <summary class="dropdown__title">Розмір</summary>
+                <form class="dropdown__content">
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="32" id="32" class="dropdown__checkbox">
+                        <label for="32" class="dropdown__checkbox-label">32 | XXS (53)</label>
+                    </div>
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="34" id="34" class="dropdown__checkbox">
+                        <label for="34" class="dropdown__checkbox-label">34 | XS (60)</label>
+                    </div>
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="36" id="36" class="dropdown__checkbox">
+                        <label for="36" class="dropdown__checkbox-label">36 | S (60)</label>
+                    </div>
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="38" id="38" class="dropdown__checkbox">
+                        <label for="38" class="dropdown__checkbox-label">38 | M (60)</label>
+                    </div>
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="40" id="40" class="dropdown__checkbox">
+                        <label for="40" class="dropdown__checkbox-label">40 | L (60)</label>
+                    </div>
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="42" id="42" class="dropdown__checkbox">
+                        <label for="42" class="dropdown__checkbox-label">42 | XL (58)</label>
+                    </div>
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="46" id="46" class="dropdown__checkbox">
+                        <label for="46" class="dropdown__checkbox-label">46 | XXL (13)</label>
+                    </div>
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="48" id="48" class="dropdown__checkbox">
+                        <label for="48" class="dropdown__checkbox-label">48 | XХXL (4)</label>
+                    </div>
+                </form>
+            </details>
+            <details class="dropdown" open>
+                <summary class="dropdown__title">Колір</summary>
+                <form class="dropdown__content">
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="white" id="white" class="dropdown__checkbox">
+                        <label for="white" class="dropdown__checkbox-label">білий</label>
+                    </div>
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="black" id="black" class="dropdown__checkbox">
+                        <label for="black" class="dropdown__checkbox-label">чорний</label>
+                    </div>
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="ivory" id="ivory" class="dropdown__checkbox">
+                        <label for="ivory" class="dropdown__checkbox-label">бежевий</label>
+                    </div>
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="green" id="green" class="dropdown__checkbox">
+                        <label for="green" class="dropdown__checkbox-label">зелений</label>
+                    </div>
+                    <div class="dropdown__content-item">
+                        <input type="checkbox" name="blue" id="blue" class="dropdown__checkbox">
+                        <label for="blue" class="dropdown__checkbox-label">синій</label>
+                    </div>
+                </form>
+            </details>
+            <details class="dropdown">
+                <summary class="dropdown__title">Сезон</summary>
+            </details>
+            <details class="dropdown">
+                <summary class="dropdown__title">Тканина</summary>
+            </details>
+            <details class="dropdown">
+                <summary class="dropdown__title">Рукав</summary>
+            </details>
+        </aside>
+        <section class="catalog-wrap__content">
+            <div class="sorting">
+                <div class="sorting__content">
+                    <img src="images/grid.svg" alt="" class="sorting__content-grid">
+                    <img src="images/grid-big.svg" alt="" class="sorting__content-grid">
+                    <p class="sorting__text">Сортувати за:</p>
+                    <details class="dropdown mb-0">
+                        <summary class="dropdown__title dropdown__title_thin mb-0">новинки</summary>
+                    </details>
+                </div>
+                <h1>Жіночі вишиванки</h1>
+            </div>
+            <div class="catalog">
+                    <div class="card">
+                        <img class="card__img" src="images/Image_1.jpg" alt="">
+                        <p class="card__title">Вишиванка з рослинним орнаментом Lito</p>
+                        <p class="card__price">2 800 грн.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="images/Image_02.jpg" alt="">
+                        <p class="card__title">Вишиванка блакитного кольору з рослинним орнаментом Fialka</p>
+                        <p class="card__price">3 400 грн.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="images/Image_04.jpg" alt="">
+                        <p class="card__title">Лляна вишиванка з геометричним орнаментом Nezalezhni</p>
+                        <p class="card__price">4 200 грн.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="images/Image_06.jpg" alt="">
+                        <p class="card__title">Вишиванка з рослинним орнаментом Kashtan</p>
+                        <p class="card__price">3 800 грн.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="images/Image_05.jpg" alt="">
+                        <p class="card__title">Легка блузка вільного крою з орнаментом Indi</p>
+                        <p class="card__price">3 800 грн.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="images/Image_03.jpg" alt="">
+                        <p class="card__title">Біла вишиванка вільного крою Svitanok</p>
+                        <p class="card__price">2 980 грн.</p>
+                    </div>
+            </div>
+            <div class="show-more">
+                <p class="catalog__more">Показати більше</p>
+                <img src="images/load.svg" alt="">
+            </div>
+            <div class="pages">
+                <p class="gray">1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>...</p>
+                <p>6</p>
+                <p>Наступна</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <img class="footer__logo" src="images/logo.png" alt="">
+        <div class="footer__content">
+            <div class="footer-links order-1">
+                <a href="" class="footer-links__link">Про нас</a>
+                <a href="" class="footer-links__link">Команда</a>
+                <a href="" class="footer-links__link">Блог</a>
+                <a href="" class="footer-links__link footer-links__link_active">Drabyna</a>
+            </div>
+            <div class="footer-links order-2">
+                <a href="" class="footer-links__link">Цікава інформація</a>
+                <a href="" class="footer-links__link">Вакансії</a>
+                <a href="" class="footer-links__link">Доставка та оплата</a>
+                <a href="" class="footer-links__link footer-links__link_active">Етнодім Маніфест</a>
+            </div>
+            <div class="footer-links order-3">
+                <a href="" class="footer-links__link footer-links__link_underline">Контакти</a>
+                <a href="" class="footer-links__link">+38 097 888 92 92</a>
+                <a href="" class="footer-links__link">Україна, м. Київ, вул. Верхній Вал 58/28</a>
+                <div class="footer-links__wrap">
+                    <a href="" class="footer-links__link">пн-пт 10:00-20:00</a>
+                    <a href="" class="footer-links__link">сб-нд 11:00-19:00</a>
+                </div>
+            </div>
+            <div class="footer-links order-4">
+                <a href="" class="footer-links__link footer-links__link_underline">Соціальні мережі</a>
+                <div class="footer-links__icons">
+                    <a href="" class="footer-icon"><img src="images/facebook.svg" alt=""></a>
+                    <a href="" class="footer-icon"><img src="images/youtube.svg" alt=""></a>
+                    <a href="" class="footer-icon"><img src="images/mail.svg" alt=""></a>
+                    <a href="" class="footer-icon"><img src="images/pinterest.svg" alt=""></a>
+                    <a href="" class="footer-icon"><img src="images/instagram.svg" alt=""></a>
+                </div>
+                <p class="footer-links__copywrite">© «Етнодім» 2009-2021</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
